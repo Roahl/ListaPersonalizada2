@@ -28,18 +28,21 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.perro,
                 R.drawable.vaca};
 
-        int[] iconosid = {R.drawable.verde,
-                R.drawable.azul,
-                R.drawable.rosa};
+        int[] iconosid = {R.drawable.color_verde,
+                R.drawable.color_azul,
+                R.drawable.color_rosa,
+                R.drawable.color_blanco,
+                R.drawable.color_negro};
 
         ArrayList<Animal> animales = new ArrayList<>();
+
 
         for (int i = 0; i < getResources().getStringArray(R.array.animales).length; i++) {
             Animal a = new Animal();
             a.setNombre(getResources().getStringArray(R.array.animales)[i]);
             a.setDescripcion(getResources().getStringArray(R.array.descripciones)[i]);
             a.setFoto(fotosid[i]);
-            a.setIcono(iconosid[1 % i]);
+            a.setIcono(iconosid[i % 5]);
             animales.add(a);
 
         }
