@@ -9,14 +9,16 @@ public class Animal {
     private int foto;
     private String nombre;
     private String descripcion;
+    private int icono;
 
     public Animal() {
     }
 
-    public Animal(int foto, String nombre, String descripcion) {
+    public Animal(int foto, String nombre, String descripcion, int icono) {
         this.foto = foto;
         this.nombre = nombre;
         this.descripcion = descripcion;
+        this.icono = icono;
     }
 
     public int getFoto() {
@@ -41,5 +43,13 @@ public class Animal {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public int getIcono() {
+        return icono;
+    }
+
+    public void setIcono(int icono) {
+        this.icono = icono;
     }
 }

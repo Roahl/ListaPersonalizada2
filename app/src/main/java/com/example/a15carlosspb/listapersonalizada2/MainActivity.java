@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.perro,
                 R.drawable.vaca};
 
+        int[] iconosid = {R.drawable.verde,
+                R.drawable.azul,
+                R.drawable.rosa};
+
         ArrayList<Animal> animales = new ArrayList<>();
 
         for (int i = 0; i < getResources().getStringArray(R.array.animales).length; i++) {
@@ -35,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
             a.setNombre(getResources().getStringArray(R.array.animales)[i]);
             a.setDescripcion(getResources().getStringArray(R.array.descripciones)[i]);
             a.setFoto(fotosid[i]);
+            a.setIcono(iconosid[1 % i]);
             animales.add(a);
 
         }
