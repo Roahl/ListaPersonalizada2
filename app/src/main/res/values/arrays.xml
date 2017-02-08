@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="animales">
+        <item>Aguila</item>
+        <item>Ballena</item>
+        <item>Caballo</item>
+        <item>Canario</item>
+        <item>Delfín</item>
+        <item>Gato</item>
+        <item>Perro</item>
+        <item>Vaca</item>
+    </string-array>
+    <string-array name="descripciones">
+        <item>Un pajaro muy americano</item>
+        <item>Un mamifero grandecito</item>
+        <item>El coche de los campesinos</item>
+        <item>El perseguido por Silvestre</item>
+        <item>Dicen que son inteligentes</item>
+        <item>Estan locos</item>
+        <item>No suelen ser muy listos</item>
+        <item>Fabrica de leche</item>
+    </string-array>
+</resources>
